@@ -1,41 +1,52 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav class="navbar navbar-default" id="navigation">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><p class="brand-text">Food, LLC</p></a>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default">
+      <div class="container">
+	<div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><p class="brand-text">Food, LLC</p></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+	<div class="collapse navbar-collapse" id="bs-navbar-collapse">
           <ul class="nav navbar-nav visible-xs">
             <li><a href="#chicken">Chicken</a></li>
             <li><a href="#beef">Beef</a></li>
             <li><a href="#sushi">Sushi</a></li>
           </ul>
         </div>
-      </div>
+      	</div>
+	</div>
     </nav>
     <div class="container">
         <h1 class="text-center">Our menu</h1>
         <div class="row">
           <div class="col-xs-12 content-block">
-			<article id="chicken">
-            <p class="declaring-text">Chicken</p></article>
-            <p>text text text text text text text</p>
+		<article id="chicken">
+            <p class="item-label">Chicken</p></article>
+            <p>interesting text about chicken item<br>. . .</p>
           </div>
           <div class="col-xs-12 content-block">
-			<article id="beef">
-            <p class="declaring-text">Beef</p></article>
-            <p>text text text text text text text</p>
+		<article id="beef">
+            <p class="item-label">Beef</p></article>
+            <p>exciting text about beef item<br>. . .</p>
           </div>
           <div class="col-xs-12 content-block">
-			<article id="sushi">
-            <p class="declaring-text">Sushi</p></article>
-            <p>text text text text text text text</p>
-          </div>
+		<article id="sushi">
+            <p class="item-label">Sushi</p></article>
+            <p>attracting text about sushi item<br>. . .</p>
+        </div>
         </div>
     </div>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
   </body>
 </html>
